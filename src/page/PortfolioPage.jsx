@@ -55,19 +55,6 @@ export default function PortfolioPage() {
 
   const projects = [
     {
-      title: "Video Sharing Platform Backend",
-      tag: "Backend",
-      tech: ["Node.js", "Express.js", "MongoDB", "Cloudinary", "JWT"],
-      description:
-        "A scalable backend system focused on authentication, media handling, and modular API architecture.",
-      features: [
-        "Built a production-ready backend system focusing on scalability and clean architecture",
-        "Designed APIs for user management, video handling, and interactions (likes/comments)",
-        "Ensured secure authentication and efficient media handling pipeline",
-      ],
-      github: "https://github.com/Vaibhav0911/Video_Sharing_Backend",
-    },
-    {
       title: "Full Stack E-Commerce Application",
       tag: "Full Stack",
       tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
@@ -79,6 +66,7 @@ export default function PortfolioPage() {
         "Developed responsive UI with seamless shopping and checkout experience",
       ],
       github: "https://github.com/Vaibhav0911/E-commerce",
+      live: "https://e-commerce-zeta-two-65.vercel.app/"
     },
     {
       title: "Blogging Platform",
@@ -92,6 +80,21 @@ export default function PortfolioPage() {
         "Built a structured system for content creation, editing, and rendering",
       ],
       github: "https://github.com/Vaibhav0911/Blog_website",
+      live: "https://blog-website-phi-black.vercel.app/"
+    },
+    {
+      title: "Video Sharing Platform Backend",
+      tag: "Backend",
+      tech: ["Node.js", "Express.js", "MongoDB", "Cloudinary", "JWT"],
+      description:
+        "A scalable backend system focused on authentication, media handling, and modular API architecture.",
+      features: [
+        "Built a production-ready backend system focusing on scalability and clean architecture",
+        "Designed APIs for user management, video handling, and interactions (likes/comments)",
+        "Ensured secure authentication and efficient media handling pipeline",
+      ],
+      github: "https://github.com/Vaibhav0911/Video_Sharing_Backend",
+      live: ""
     },
   ];
 
@@ -148,7 +151,7 @@ export default function PortfolioPage() {
                   Explore Projects
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1cFi4OBW4ce480EhaXFtvfXEembszl6sK/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1aBxzqbEaC-CKD0B9qNB9rvhxxECpg6wb/view?usp=drive_link"
                   className="rounded-full border border-slate-300 bg-transparent px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-white"
                   target="_blank"
                   rel="noreferrer"
@@ -353,12 +356,14 @@ export default function PortfolioPage() {
                   >
                     GitHub
                   </a>
-                  {/* <a
+                  <a
                     href={project.live}
                     className="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     Live Demo
-                  </a> */}
+                  </a>
                 </div>
               </article>
             ))}
